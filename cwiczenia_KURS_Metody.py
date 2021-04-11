@@ -51,22 +51,6 @@
 ##mozna zrobic odrazu warunek w return (jak u MM) -> return n == math.isqrt(n)*math.isqrt(n) 
 
 
-#-------------------------------------------------------------
-# Zadanie 3.
-## Napisz funkcję, która zwraca element środkowy listy.
-## middle_element(([1, 2, 3]) = 2 -> 3//2 długośc jest 3 i trzeba zrócić element 1
-## middle_element([1, 5, 3, 4]) = 5 -> 4//2-1 długość 4, i trzeba zwrócić eleemt 2
-
-# def middle_element(array):
-#     size = len(array)
-#     if size%2 == 1:
-#         return array[size//2]           # zamiast typować na int mozna dzielic // bez reszty
-#     else:
-#         return array[size//2-1]
-
-
-# print(middle_element([1,2,3]))      #wywołanie listy, bez tworzenia nazwy zmiennej
-# print(middle_element([1,5,3,4]))
 
 
 #-------------------------------------------------------------
@@ -140,37 +124,6 @@
 ## codility lessons -> app.codility.com/programmers/lessons/1-iterations
 
 
-#---------------  rozwiązanie MM na 66%
-# def solution(A):
-#     for i in range(1,len(A)+2):
-#         if not i in A:
-#             return i
-
-
-# #---------------  rozwiązanie MM na 88%
-# def solution(A):
-#     A = [x for x in A if x >0]
-#     A = sorted(A)
-#     if 1 not in A:
-#         return 1
-#     for i in range(1,len(A)):
-#         if A[i] ==A[i-1]:
-#             continue
-#         if A[i] ==A[i-1]+1:
-#             continue    
-#         return A[i-1]+1 
-#     return len(A)+1     
-
-
-#---------------  rozwiązanie MM na 100%
-#a=set(A) -> szybciej robi operacje niz lista
-
-# def solution ( A ):
-#     # write your code in Python 3.6
-#     s = set (A)
-#     for i in range ( 1 , len (A)+ 2 ):
-#         if not i in s:
-#            return i 
 
 #-------------------------------------------------------------
 # Zadanie 5.
@@ -198,22 +151,6 @@
 # array = ["f","g","e","c","a","s","r","d","v","c","d","e","f","k","r"]
 # print(max_appearence(array))
 
-#-------------------------------------------------------------
-# Zadanie 6.
-## Napisz funkcję, która jako argument przyjmuje listę Stringów. Jako wynik ma
-## zwracać listę wszystkich słów, które zawierają słowa 5-literowe.
-
-# def onlyFiveLetter(words):
-#     scoreList=[]
-#     for i in range(len(words)):
-#         if len(words[i]) == 5:
-#             scoreList.append(words[i])
-#     return scoreList
-
-
-
-# listaSlow = ["dom", "lalka","kot","domek","kajak","histo","12345"]
-# print(onlyFiveLetter(listaSlow))
 
 
 #-------------------------------------------------------------
