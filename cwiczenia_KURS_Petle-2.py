@@ -85,33 +85,9 @@
 #     print(value)
 
 
-#-------------------------------------------------------------
-# Zadanie 6
-## Napisz program, który odczytuje kod pocztowy i sprawdza czy kod pocztowy jest poprawny.
-
-# kodPocztowy = input("Podaj kod pocztowy w formacie XX-XXX: ")
-# czToKodPocztowy = True
-
-# if len(kodPocztowy) == 6 and kodPocztowy[2] == "-":
-#     for i in range(0,6):
-#         if i == 2:
-#             continue
-#         if not kodPocztowy[i].isdigit():
-#             czToKodPocztowy = False
-# else:
-#     czToKodPocztowy = False
-# if czToKodPocztowy:
-#     print("Kod jest poprawny")
-# else:
-#     print("Kod jest błędny")
 
 
-#-------------------------------------------------------------
-# Zadanie 7
-## Napisz program, który wypisuje liczby od 100 do 50, w tej kolejności.
 
-# for i in range(100,49,-1):
-#     print(i)
 
 #-------------------------------------------------------------
 # Zadanie 8
@@ -128,29 +104,6 @@
    
 
 # win.mainloop()
-
-#-------------------------------------------------------------
-# Zadadnie 9
-## Co z tym kodem jest nie tak?
-# for i in range(1,50):
-# print(i)
-#brak wcięcia
-
-
-#-------------------------------------------------------------
-# Zadadanie 10
-
-# import math as m
-# r = float(input("Podaj promień koła :\n"))
-# print ("Pole koła wynosi:",round((m.pi*r**2),2))
-
-
-#-------------------------------------------------------------
-# Zadanie 11
-## Napisz program, który wypisuje liczby od 100 do 50 (w tej kolejności).
-
-# for i in range(100,49,-1):
-#     print(i)
 
 
 #-------------------------------------------------------------
@@ -193,13 +146,7 @@
 
 ## E:\Programowanie\Python\KURS\folder
 
-#-------------------------------------------------------------
-# Zadanie 15
-## Napisz program, który wypisuje wszystkie liczby od 2 do 1000, które mają 3 cyfry.
 
-# for i in range(2,1001):
-#     if len(str(i)) == 3:
-#         print (i)
 
 #-------------------------------------------------------------
 #  cwiczenie 16
@@ -218,15 +165,6 @@
 # #element = soup.find('span',class_="feelTempValue")
 # element = soup.find('div',class_="temp")
 # print('Temperatura w Siemianowice to: ',element.text)
-
-#-------------------------------------------------------------
-# Zadanie 17
-## Napisz program, który losuje 5 liczb z zakresu od 2 do 50.
-
-# import random as r
-
-# for i in range (1,6):
-#     print(r.randrange(2,51))
 
 #-------------------------------------------------------------
 # Zadanie 18
@@ -303,76 +241,3 @@
 # import random as r
 # quotes = [ "Przyslowie 1" , "Przyslowie 2" , "Przyslowie 3" , "Przyslowie 4" , "Przyslowie 5" , "Przyslowie 6" ]
 # print (quotes[r.randrange( 0 , len (quotes))],"\n") #wyświetla losowo pozycję z listy od pozycji 0 do pozycji określonej długoscia listy -> len(quotes+1) <- bo trzeba domknąć przedział
-
-
-#-------------------------------------------------------------
-# Zadanie 24 -- sprawdzić!!!!!!
-## Napisz program, który odczytuje liczbę n i na ekran wypisuje
-## 2*n!+2*(n-2)!. Gdzie ! oznacza silnie.
-
-
-# n = int ( input ("Podaj liczbę n: " ))
-# silnia1 = 1
-# silnia2 = 1
-# for i in range (1 ,n+1):
-#     silnia1 *=i
-#     if i == n-2:
-#         silnia2 = silnia1
-# print(2*(silnia2+silnia1))
-
-#-------------------------------------------------------------
-# Zadanie 25 -- sprawdzić!!!!!!
-## Napisz program, który sprawdza czy wyraz jest palindromem przy użyciu pętli while.
-
-# ----- sposób 1 -----
-# print("----- sposób 1 -----")
-# word = input ( 'Podaj slowo \n ' )
-# is_palindrom = True                 #zmienna pomocnicza przyjmuje wartość TRUE
-# left = 0                            #ustalamy początkową wartość zmiennej left na 0, aby móc odczytac pierwszą(zerową) literę ciągu
-# right = len (word)- 1               #zmienna right przyjmuje wartość odpowiadającą numerowi ostatniej litery ciagu (-1, bo liczymy od zera)
-# print(word[left])
-# print(word[right])
-# while left!=right:                  # do chwili gdy pierwsza i ostatnia ( a następnie kolejne druga i przedostatnia itd.) litera ciągu sa takie same wykonuj pętle while, zakończ gdy będą różne 
-#     if word[left]!=word[right]:     # sprawdź czy pierwsza i ostatnia litera (i odpowiednio kolejne) są różne
-#         is_palindrom = False        # jeżeli tak, to przypiz zmiennej is_palindrom wartość False
-#         break                       # i zakończ pętlę
-#     left+= 1                        # zmień wartość zmiennej left o 1 - aby sprawdzic następną literę ciągu(od lewej)
-#     right-= 1                       # zmień wartość zmiennej right o -1 (w dół) - aby sprawdzic następną literę ciągu(od prawej) i porównać je w pętli while i w ifie
-#     print(word[left],"- z lewej")
-#     print(word[right],"- z prawej")
-
-# print (is_palindrom)                # wyświetl wartość zmiennej is_palindrom na ekranie w zaleznosci jaka otrzymala ona wartoś
-
-
-# # ----- sposób 2 -----
-# print("----- sposób 2 -----")
-# #word = input ( 'Podaj wyraz \n ' )
-# left = 0
-# right = len (word)- 1
-# is_palindrom = True
-# while left<right:
-#     if word[left]<word[right]:
-#         is_palindrom = False
-#         break
-#     left+= 1
-#     right-= 1
-
-
-# print (is_palindrom)   
-# if is_palindrom:
-#     print ( 'Palindrom' )
-# else :
-#     print ( 'To nie jest palindrom' )
-
-
-
-
-#-------------------------------------------------------------
-# Zadanie 26 
-## Napisz program, który odczytuje liczbę n i na ekran wypisuje n- ty
-## wyraz ciągu
-## x(0) = 5
-## x(n) = x(n-1)+2(x(n-2)
-
-
-# Niepoprawna treść.
