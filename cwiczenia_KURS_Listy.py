@@ -63,86 +63,7 @@
 # else :
 #     print ( 'To nie jest palindrom' )
 
-#-------------------------------------------------------------
-# Zadanie 4
-## Zdefiniuj przykładową listę zawierającą twoich przyjaciół.
-## Wypisz:
-## - element pierwszy listy
-## - ostatni
-## - środkowy
 
-
-# friends = ["Tomek","Adam","Michał","Jacek","Karol"]
-# print(friends[0])
-# print(friends[-1])
-# print(friends[(int(len(friends)/2))])  #lub print(friends[(len(friends)//2)])
-
-#-------------------------------------------------------------
-# Zadanie 5
-## Odczytaj liczby do listy:
-## Pierwszy wiersz - liczba elementów
-## Następny wiersz - elementy listy
-## 5
-## 1 3 4 5 6
-# ## Wypisz elementy listy w odwrotnej kolejności
-
-# numbers = []
-# size = int(input("Podaj liczbę elementów: "))
-# for i in range(1, size+1):
-#     element = int(input("Podaj liczbę " +str(i)+"\n"))
-#     numbers.append(element)
-# print("Liczba elementów listy to:",len(numbers))
-# print(numbers)
-# print(numbers[::-1])
-# numbers.reverse()
-# for i in range(0,len(numbers)):
-#     print(numbers[i],end="")
-# print("\n")
-# for values in numbers:
-#     print (values,end=",")
-# print("\n")
-# for index, value in enumerate(numbers):
-#     print(index,value)
-
-
-#-------------------------------------------------------------
-# Zadanie 6
-## Odczytaj listę podobnie jak w Zadaniu 2 i sumuj elementy listy.
-## lambd - sprawdzić
-
-# numbers = []
-# size = int(input("Podaj liczbę elementów: "))
-# for i in range(1, size+1):
-#     element = int(input("Podaj liczbę " +str(i)+"\n"))
-#     numbers.append(element)
-# print("Liczba elementów listy to:",len(numbers))
-# print(numbers)
-# print(numbers[::-1])
-# numbers.reverse()
-# for i in range(0,len(numbers)):
-#     print(numbers[i],end="")
-# suma = 0
-# for i in range(0,len(numbers)):
-#     suma += numbers[i]
-# print("Suma=",suma)
-
-# sum = 0
-# for value in numbers:
-#     print(value)
-#     sum += value
-#     # sum = (sum+value)
-# print(sum)
-
-# sum = 0
-# for value in numbers:
-#     print(value)
-#     sum = (sum+value)
-# print(sum)
-# for value in  numbers:
-#     print(value)
-
-# for index,value in enumerate(numbers):
-#     print(index,value)
 
 #-------------------------------------------------------------
 # Zadanie 7
@@ -177,60 +98,6 @@
 
 # numbers ={} # typ dict
 # numbers = {1,2,3,4,5} #typ numbers
-
-
-#-------------------------------------------------------------
-# Zadanie 8
-## Napisz program, który symuluje słownik polsko-angielski.
-
-
-# dictionary = {'cześć': 'Hallo','mama': 'mother','tata': 'father', 'pies': 'dog'}
-# polish_world = input('Podaj słowo po polsku \n')
-
-# if polish_world in dictionary:
-#     print('Słowo po angielsku to: ', dictionary[polish_world])
-# else:
-#     print('Nie znaleziono słowa w słowniku \n')
-
-## wersja na listach
-# polish_words = ['mama','tata','witam','dom']
-# english_words = ['mother','father','hallo','house']
-
-# # print(polish_words[0])
-# # print(english_words[0])
-
-# polish_word = input("Podaj słowo po Polsku \n")
-
-# # trzeba znaleźć indeks, na którym występuje dane słowo na liście
-
-# try:
-#     index = polish_words.index(polish_word)
-#     print("Słowo po Angielsku to:"+english_words[index])
-# except:
-#     print("Nie znaleziono słowa w słowniku")
-
-
-#-------------------------------------------------------------
-# Zadanie 9
-## Napisz program symulujący quiz, gdzie możliwe są odpowiedzi tak i nie.
-
-# quiz = {'Czy Polska leży w Europie?':'tak',
-#         'Czy 2+2 =5?':'nie',
-#         'Czy Python to język programowania?':'tak',
-#         'Czy Warszawa to stolica Polski?':'tak'
-#         }
-
-
-# questions = quiz.keys()      # to nie jest lista, to należy do dict
-# score = 0 # wynik użytkownika
-# for question in questions:
-#     answer = input(question+'\n').lower()   # lower() zamienia na małe litery (Tak, TAK, tak -> tak)
-#     # poprawna odpowiedź
-#     if answer == quiz[question]:
-#         score +=1
-# print("Zdobyłeś",score,"punktów")
-
-
 
 
 
@@ -353,7 +220,7 @@
 
 
 
-## ponizej przykład wykładu
+## ponizej przykład z wykładu
 # x = [1,2,3]
 # y = [2,3,4]
 # p.plot(x,y)
